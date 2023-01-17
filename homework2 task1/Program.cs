@@ -6,4 +6,11 @@
 
 Console.Write("Введите трёхзначное число: ");
 int a = Convert.ToInt32(Console.ReadLine());
+if (a <= 100 || a > 999)
+{
+Console.WriteLine($"Число {a} не трёхзначное, попробуйте ввести заново");
+}
+else
+{
 Console.WriteLine($"Второй цифрой числа {a} является: {a / 10 % 10}");
+}
